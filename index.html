@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="ball.js"></script>
+  <script language="javascript" type="text/javascript" src="square.js"></script>
+  <script language="javascript" type="text/javascript" src="doubleBreakerjs.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+   <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="mh2">Settings</h2>
+       <p>Choose your settings below and press "Start" to apply them. You can bring back this menu by clicking the screen at any time.</p>
+      <div id="formbox" class="formbox">
+        <h3>Balls per side:</h3>
+        <form id="balls" class="style1"">
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value=1 checked>1
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value=2>2
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value=3>3
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value=4>4
+          </label>
+        </form>
+        <h3>Ball size:</h3>
+        <form id="ball-size" class="style1">
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value=5 >Small
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value=20 checked>Medium
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value=35>Large
+          </label>
+        </form>
+        <h3>Ball speed:</h3>
+        <form id="ball-speed" class="style1">
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value=2>Slow
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value=6 checked>Normal
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="optradio" value=10>Fast
+          </label>        
+        </form>
+       </div>
+      </br></br>
+      <div><button id="submit" type="submit">Start</button></div>
+    </div>
+   </div>
+</body>
+</html>
